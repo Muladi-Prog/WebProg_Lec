@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="{{ URL::asset('images/binusLogo.png') }}" type="image/x-icon">
     <title>@yield('title') | Binus Forum</title>
     <link rel="stylesheet" href="{{ URL::asset('css/layout.css') }}">
+
+
 </head>
 <body>
     <div class="navbar">

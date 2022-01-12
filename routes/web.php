@@ -41,6 +41,7 @@ Route::middleware('auth')->group(function () {
 
     // Create Post
     Route::get('/create_post', [CreatePostController::class, 'view'])->name('create_post');
+    Route::post('/send_post/{user_id}', [CreatePostController::class, 'create'])->name('send_post');
 
     // Reply Post
     Route::get('/reply/{posts_id}', [ReplyController::class, 'view'])->name('reply');
