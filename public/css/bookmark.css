@@ -1,0 +1,177 @@
+/* Bookmark Section */
+.bookmark-section {
+    padding-top: 11vh;
+    width: 70%;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 36, 36);
+}
+
+.section-title {
+    font-size: 40px;
+    color: rgb(247, 247, 247);
+    font-weight: 600;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+    color: rgb(204, 204, 204);
+}
+
+/* Search Section */
+
+.search-section {
+    width: 70%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid rgb(136, 136, 136);
+}
+
+.textbox {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: 2px solid rgb(39, 39, 39);
+    border: 0px;
+    font-size: large;
+}
+
+.textbox:hover {
+    border: 2px solid rgb(61, 119, 206);
+}
+
+.textbox:focus {
+    background-color: rgb(180, 208, 224);
+    color: white;
+}
+
+.search-button {
+    border-radius: 10px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background-color: rgb(100, 204, 123);
+    color: white;
+    border: 0px;
+    font-size: large;
+}
+
+.search-button:hover {
+    background-color: rgb(49, 136, 68);
+    transition: ease-out 100ms;
+}
+
+.search-button:active {
+    background-color: rgb(30, 83, 42);
+}
+
+.list-section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30vh;
+    height: max-content;
+    padding-bottom: 7vh;
+    margin-bottom: 10vh;
+}
+
+.bookmark-button {
+    width: 100%;
+    display: flex;
+}
+
+.bookmark-post {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.bookmark-post:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bookmark-post:active, .unread-post:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.post-profile {
+    width: 20%;
+}
+
+.post-profile-name {
+    color: black;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.post-profile-role {
+    color: rgb(223, 186, 66);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.post-detail {
+    width: 70%;
+}
+
+.post-title {
+    font-size: xx-large;
+    margin: 0px;
+    color: rgb(65, 93, 160);
+}
+
+.post-description {
+    color: rgb(102, 102, 102);
+}
+
+.post-action {
+    width: 15%;
+    display: flex;
+    align-items: flex-end;
+    height: auto;
+}
+
+.delete-button {
+    width: 3vw;
+    height: 3vw;
+    background: url(../images/delete.png) no-repeat;
+    background-size: contain;
+    margin-bottom: 10%;
+}
+
+.delete-button:hover {
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 10%;
+    transition: ease-out 150ms;
+    background: url(../images/deleteHover.png) no-repeat;
+    background-size: contain;
+}
+
+.delete-button:active {
+    width: 3vw;
+    height: 3vw;
+    margin-bottom: 10%;
+    background: url(../images/deleteActive.png) no-repeat;
+    background-size: contain;
+}

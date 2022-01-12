@@ -1,0 +1,272 @@
+.banner-section {
+    background-image: url('../images/banner1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forum-icon {
+    width: 5vw;
+    margin-right: 2vw;
+}
+
+.banner-title {
+    margin: 0px;
+    color: white;
+    font-weight: 900;
+    font-size: 3vw;
+}
+
+.feature-section {
+    margin-top: -15vh;
+    margin-bottom: 10vh;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(36, 24, 104);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 3px black;
+}
+
+.feature-title {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 3vh;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.feature-icon {
+    width: 10vw;
+}
+
+.feature-label {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.get-started-section {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 121, 44);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.get-started-button {
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border-radius: 5px;
+    color: rgb(36, 24, 104);
+    font-weight: 700;
+    font-size: large;
+}
+
+.get-started-button:hover {
+    background-color: rgb(36, 24, 104);
+    color: white;
+    transition: ease-out 100ms;
+}
+
+.get-started-button:active {
+    background-color: rgb(19, 13, 58);
+    color: white;
+}
+
+.get-started-img {
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.get-started-label {
+    color: rgb(35, 25, 88);
+}
+
+.get-started-left-section {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started-right-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.unread-section {
+    width: 80%;
+    border-radius: 25px;
+    background-color: rgb(19, 13, 58);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15vh;
+    height: max-content;
+    padding-bottom: 3vh;
+    margin-bottom: 10vh;
+}
+
+.unread-title {
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 1vh;
+}
+
+.unread-post {
+    width: 85%;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.post-profile {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.post-profile-name {
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.post-profile-role {
+    color: rgb(223, 186, 66);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.like-number {
+    margin-right: 0.7vw;
+    color: white;
+}
+
+.dislike-number {
+    margin-right: 0.7vw;
+    color: white;
+}
+
+.like-icon {
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.dislike-icon {
+    width: 2vw;
+    margin-right: 1vw;
+}
+
+.post-detail {
+    width: 80%;
+}
+
+.post-title {
+    font-size: x-large;
+    margin: 0px;
+    color: rgb(205, 253, 255);
+}
+
+.post-description {
+    color: white;
+}
+
+.bookmark-section {
+    width: 80%;
+    border-radius: 25px;
+    background-color: rgb(19, 13, 58);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    padding-bottom: 3vh;
+    margin-bottom: 10vh;
+}
+
+.bookmark-title {
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 1vh;
+}
+
+.bookmark-post {
+    width: 85%;
+    display: flex;
+    border-bottom: 1px solid white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.bookmark-post:hover, .unread-post:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bookmark-post:active, .unread-post:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.more-section {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2vh;
+}
+
+.more-button {
+    color: white;
+}
+
+.more-button:hover {
+    color: rgb(121, 127, 185);
+}
+
+.more-button:active {
+    color: rgb(89, 94, 145);
+}
+
+.title-line {
+    width: 60%;
+    border: 2pt solid rgb(255, 121, 44);
+    border-radius: 20px;
+}
+
+.empty-text {
+    color: white;
+}
