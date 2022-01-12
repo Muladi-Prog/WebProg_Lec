@@ -114,11 +114,56 @@
                     </a>
                 @endforeach
             @endif
+            
 
                 <div class="more-section">
                     <a href="{{ URL('/bookmark_post') }}" class="more-button">more >></a>
                 </div>
             </div>
+            {{-- Read post --}}
+            <div class="bookmark-section">
+                <h2 class="bookmark-title">Read Post</h2>
+                <hr class="title-line">
+
+            @if ($readPosts->isEmpty())
+                <div class="empty-list">
+                    <h3 class="empty-text">No Post Yet ..</h3>
+                </div>
+            @else
+            @php
+                $limit = 0;
+            @endphp
+                @foreach ($readPosts as $post)
+                @if ($limit < 5)
+                    
+                <a href="/post/{{ $post->posts_id }}" class="bookmark-post">
+                    <div class="post-detail">
+                        <h3 class="post-title">{{ $post->posts->title }}</h3>
+                        <h4 class="post-profile-name">Posted by: {{ $post->users->name }}</h4>
+                    </div>
+
+                    <div class="post-profile">
+                        <p class="like-number">{{ $post->posts->likes }}</p>
+                        <img class="like-icon" src="{{ URL::asset('images/like_button.png') }}" alt="">
+                        <p class="dislike-number">{{ $post->posts->dislikes }}</p>
+                        <img class="dislike-icon" src="{{ URL::asset('images/dislike_button.png') }}" alt="">
+                    </div>
+                </a>
+                @endif
+                    @php
+                        $limit+=1;
+                    @endphp
+                @endforeach
+            @endif
+
+                <div class="more-section">
+                    <a href="{{ URL('/read_post') }}" class="more-button">more >></a>
+                </div>
+            </div>
+
+
+            {{-- readPosts --}}
+
 
         {{-- Lecturer --}}
         @elseif ($user->roles->name == "Lecturer")

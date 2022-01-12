@@ -12,6 +12,7 @@
   <h4>
     {{ Session::get('success') }}
   </h4>
+  
     @php
         Session::forget('success');
     @endphp

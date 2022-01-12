@@ -36,6 +36,8 @@ Route::middleware('auth')->group(function () {
     // Unread Post
     Route::get('/unread_post', [UnreadPostController::class, 'view'])->name('unread');
 
+    // Read Post
+    Route::get('/read_post', [ReadPostController::class, 'view'])->name('read');
     // Bookmark Post
     Route::get('/bookmark_post', [BookmarkPostController::class, 'view'])->name('bookmark');
 
